@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
 from typing import Final
-from time import sleep
+# from time import sleep
 from datetime import date
 from shutil import which
 
@@ -88,9 +88,7 @@ def main() -> None:
     student_button.click()
 
     submit_button: WebElement = driver.find_element(By.ID, "NextButton")
-    # submit_button.click()
-
-    sleep(30)
+    submit_button.click()
 
     driver.quit()
 
